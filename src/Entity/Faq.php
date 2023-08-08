@@ -39,8 +39,7 @@ class Faq
     private ?string $description = null;
 
     #[ORM\Column]
-    #[Assert\NotBlank]
-    private ?int $score = null;
+    private ?int $score = 0;
 
     public function getId(): ?int
     {
